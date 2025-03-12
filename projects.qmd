@@ -1,0 +1,9 @@
+---
+title: "Project"
+listing: 
+  type: default
+  contents:
+    - "projects/*.qmd"
+---
+
+

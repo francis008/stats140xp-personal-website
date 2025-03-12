@@ -4,10 +4,11 @@ project:
 website:
   title: "Francis Chan"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: projects.qmd
+        text: Projects
 
 format:
   html:

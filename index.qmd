@@ -5,7 +5,7 @@ about:
   image: headshot.JPG
   links:
     - icon: card-text
-      text: Resume
+      text: Resume 
       href: "resume.pdf"
     - icon: github
       text: Github
@@ -34,4 +34,4 @@ A.S in Mathematics | Sept 2021 - June 2023
 UCLA Housing | Front Desk Assistant \
 June 2024 - present
 
-## 
+
