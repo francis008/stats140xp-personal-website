@@ -9,8 +9,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "stats140xp-personal-website",
+    "title": "Francis Chan",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\nrnorm(10)\n\n [1] -0.805592959 -1.140804921  0.231729739  1.601055223  0.939688191\n [6] -0.006144384  0.241223856  0.312582208 -1.405939321  0.105314458"
+    "text": "I’m a senior at UCLA majoring in Statistics & Data Science. I enjoy solving problem, tackling complex challenges, and leveraging data to drive impactful descisions."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Francis Chan",
+    "section": "Education",
+    "text": "Education\nUniversity of California, Los Angeles | Los Angeles, CA\nB.S in Statistics & Data Science | Sept 2023 - June 2025\nDe Anza College | Cupertino, CA\nA.S in Mathematics | Sept 2021 - June 2023"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Francis Chan",
+    "section": "Experience",
+    "text": "Experience\nUCLA Housing | Front Desk Assistant\nJune 2024 - present"
   }
 ]

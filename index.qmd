@@ -1,17 +1,37 @@
 ---
-title: "stats140xp-personal-website"
+title: "Francis Chan"
+about:
+  template: trestles
+  image: headshot.JPG
+  links:
+    - icon: card-text
+      text: Resume
+      href: "resume.pdf"
+    - icon: github
+      text: Github
+      href: https://github.com/francis008
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/francischan0806/
+    - icon: envelope
+      text: E-mail
+      url: "mailto:francischanziheng@gmail.com"
+    
 ---
 
-This is a Quarto website.
+I'm a senior at UCLA majoring in Statistics & Data Science. I enjoy solving problem, tackling complex challenges, and leveraging data to drive impactful descisions. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Education
 
-```{r}
-1 + 1
-```
+University of California, Los Angeles | Los Angeles, CA \
+B.S in Statistics & Data Science | Sept 2023 - June 2025 
 
-```{r}
-rnorm(10)
-```
+De Anza College | Cupertino, CA \
+A.S in Mathematics | Sept 2021 - June 2023
 
+## Experience
 
+UCLA Housing | Front Desk Assistant \
+June 2024 - present
+
+## 
