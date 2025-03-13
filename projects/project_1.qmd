@@ -4,14 +4,15 @@ author: "Francis Chan"
 date: "Nov 10, 2024"
 description: "This project involves classifying genuine or counterfeit banknotes."
 image: "counterfeit.jpg"
+categories: ["Python", "Classification"]
 ---
 
 ## Summary 
 
-### Introduction:
+### Introduction
 This project aimed to classify banknotes as genuine or counterfeit using machine learning models. The objective was to develop and compare different classifiers to determine the most accurate model for this task. The process involved data preprocessing, model training, evaluation, and performance analysis.
 
-### Process:
+### Process
 
 * **Data** **Preparation:**
   - Loaded the dataset and structured it into feature variables (X) and labels (y).
@@ -25,7 +26,7 @@ This project aimed to classify banknotes as genuine or counterfeit using machine
   - Applied a Gradient Boosting classifier with the same number of estimators and depth, which showed the highest training accuracy.
   - Assessed model performance using accuracy scores and test error rates.
 
-### Outcome:
+### Outcome
 
 - The Decision Tree model had a test accuracy of 96.36%, indicating moderate performance.
 - The Random Forest model improved accuracy to 99.51%, showing better generalization.

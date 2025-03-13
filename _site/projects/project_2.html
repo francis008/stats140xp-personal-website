@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Francis Chan">
-<meta name="dcterms.date" content="2024-11-10">
-<meta name="description" content="This project involves classifying genuine or counterfeit banknotes.">
+<meta name="dcterms.date" content="2024-08-17">
+<meta name="description" content="This project aims to improve the classification model.">
 
-<title>Banknote Authentication and Model Evaluation – Francis Chan</title>
+<title>MNIST Handwritten Digit Recognition – Francis Chan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Banknote Authentication and Model Evaluation</h1>
+<h1 class="title">MNIST Handwritten Digit Recognition</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Python</div>
     <div class="quarto-category">Classification</div>
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    This project involves classifying genuine or counterfeit banknotes.
+    This project aims to improve the classification model.
   </div>
 </div>
 
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 10, 2024</p>
+      <p class="date">August 17, 2024</p>
     </div>
   </div>
   
@@ -171,34 +171,30 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <section id="introduction" class="level3">
 <h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
-<p>This project aimed to classify banknotes as genuine or counterfeit using machine learning models. The objective was to develop and compare different classifiers to determine the most accurate model for this task. The process involved data preprocessing, model training, evaluation, and performance analysis.</p>
+<p>This project focused on improving the accuracy of handwritten digit recognition using the MNIST dataset. The objective was to enhance an existing model’s performance by implementing various optimization techniques. The goal was to increase accuracy from an initial baseline of 95% to nearly 99%.</p>
 </section>
 <section id="process" class="level3">
 <h3 class="anchored" data-anchor-id="process">Process</h3>
 <ul>
-<li><p><strong>Data</strong> <strong>Preparation:</strong></p>
+<li><p><strong>Model</strong> <strong>Optimization:</strong></p>
 <ul>
-<li>Loaded the dataset and structured it into feature variables (X) and labels (y).</li>
-<li>Standardized feature variables for improved model performance.</li>
-<li>Split the dataset into training and testing sets using a 70-30 ratio.</li>
+<li>Used a pre-trained model as a baseline for comparison.</li>
+<li>Adjusted the MaxPooling2D layer’s strides parameter to (1,1) to reduce downsampling and capture more features.</li>
+<li>Modified the Dropout rate to 0.05, ensuring more neurons remained active during training while preventing overfitting.</li>
 </ul></li>
-<li><p><strong>Modeling</strong> <strong>and</strong> <strong>Evaluation:</strong></p>
+<li><p><strong>Techniques</strong> <strong>Implemented:</strong></p>
 <ul>
-<li>Trained a Decision Tree classifier and evaluated its accuracy on both training and test sets.</li>
-<li>Implemented a Random Forest model with 51 estimators and a depth of 5, achieving higher accuracy compared to the Decision Tree.</li>
-<li>Applied a Gradient Boosting classifier with the same number of estimators and depth, which showed the highest training accuracy.</li>
-<li>Assessed model performance using accuracy scores and test error rates.</li>
+<li>Experimented with different batch sizes and number of epochs to optimize training.</li>
+<li>Evaluated the effect of GPU vs.&nbsp;CPU performance on model training speed.</li>
 </ul></li>
 </ul>
 </section>
 <section id="outcome" class="level3">
 <h3 class="anchored" data-anchor-id="outcome">Outcome</h3>
 <ul>
-<li>The Decision Tree model had a test accuracy of 96.36%, indicating moderate performance.</li>
-<li>The Random Forest model improved accuracy to 99.51%, showing better generalization.</li>
-<li>The Gradient Boosting model achieved a near-perfect accuracy of 99.27%, suggesting strong predictive capabilities.</li>
-<li>Both Random Forest and Gradient Boosting significantly outperformed the Decision Tree in terms of generalization and error minimization.</li>
-<li>This analysis demonstrated the effectiveness of ensemble methods like Random Forest and Gradient Boosting in reducing classification errors for banknote authentication.</li>
+<li>Successfully improved the model’s accuracy from 95% to nearly 99%.</li>
+<li>Applied fine-tuned hyperparameters to create an optimized model with enhanced digit recognition capabilities.</li>
+<li>Balanced model complexity and generalization through strategic dropout settings and pooling adjustments.</li>
 </ul>
 
 

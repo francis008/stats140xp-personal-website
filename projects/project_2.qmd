@@ -1,0 +1,31 @@
+---
+title: "MNIST Handwritten Digit Recognition"
+author: "Francis Chan"
+date: "Aug 17, 2024"
+description: "This project aims to improve the classification model."
+image: "MNIST.jpg"
+categories: ["Python", "Classification"]
+---
+
+## Summary 
+
+### Introduction
+This project focused on improving the accuracy of handwritten digit recognition using the MNIST dataset. The objective was to enhance an existing model's performance by implementing various optimization techniques. The goal was to increase accuracy from an initial baseline of 95% to nearly 99%.
+
+### Process
+
+* **Model** **Optimization:**
+  - Used a pre-trained model as a baseline for comparison.
+  - Adjusted the MaxPooling2D layer’s strides parameter to (1,1) to reduce downsampling and capture more features.
+  - Modified the Dropout rate to 0.05, ensuring more neurons remained active during training while preventing overfitting.
+
+* **Techniques** **Implemented:** 
+
+  - Experimented with different batch sizes and number of epochs to optimize training.
+  - Evaluated the effect of GPU vs. CPU performance on model training speed.
+
+### Outcome
+
+- Successfully improved the model’s accuracy from 95% to nearly 99%.
+- Applied fine-tuned hyperparameters to create an optimized model with enhanced digit recognition capabilities.
+- Balanced model complexity and generalization through strategic dropout settings and pooling adjustments.

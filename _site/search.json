@@ -32,7 +32,7 @@
     "href": "projects.html",
     "title": "Project",
     "section": "",
-    "text": "Banknote Authentication and Model Evaluation\n\n\n\n\n\nThis project involves classifying genuine or counterfeit banknotes.\n\n\n\n\n\nNov 10, 2024\n\n\nFrancis Chan\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBanknote Authentication and Model Evaluation\n\n\n\n\n\n\nPython\n\n\nClassification\n\n\n\nThis project involves classifying genuine or counterfeit banknotes.\n\n\n\n\n\nNov 10, 2024\n\n\nFrancis Chan\n\n\n\n\n\n\n\n\n\n\n\n\nMNIST Handwritten Digit Recognition\n\n\n\n\n\n\nPython\n\n\nClassification\n\n\n\nThis project aims to improve the classification model.\n\n\n\n\n\nAug 17, 2024\n\n\nFrancis Chan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project_1.html",
@@ -47,5 +47,19 @@
     "title": "Banknote Authentication and Model Evaluation",
     "section": "",
     "text": "This project aimed to classify banknotes as genuine or counterfeit using machine learning models. The objective was to develop and compare different classifiers to determine the most accurate model for this task. The process involved data preprocessing, model training, evaluation, and performance analysis.\n\n\n\n\nData Preparation:\n\nLoaded the dataset and structured it into feature variables (X) and labels (y).\nStandardized feature variables for improved model performance.\nSplit the dataset into training and testing sets using a 70-30 ratio.\n\nModeling and Evaluation:\n\nTrained a Decision Tree classifier and evaluated its accuracy on both training and test sets.\nImplemented a Random Forest model with 51 estimators and a depth of 5, achieving higher accuracy compared to the Decision Tree.\nApplied a Gradient Boosting classifier with the same number of estimators and depth, which showed the highest training accuracy.\nAssessed model performance using accuracy scores and test error rates.\n\n\n\n\n\n\nThe Decision Tree model had a test accuracy of 96.36%, indicating moderate performance.\nThe Random Forest model improved accuracy to 99.51%, showing better generalization.\nThe Gradient Boosting model achieved a near-perfect accuracy of 99.27%, suggesting strong predictive capabilities.\nBoth Random Forest and Gradient Boosting significantly outperformed the Decision Tree in terms of generalization and error minimization.\nThis analysis demonstrated the effectiveness of ensemble methods like Random Forest and Gradient Boosting in reducing classification errors for banknote authentication."
+  },
+  {
+    "objectID": "projects/project_2.html",
+    "href": "projects/project_2.html",
+    "title": "MNIST Handwritten Digit Recognition",
+    "section": "",
+    "text": "This project focused on improving the accuracy of handwritten digit recognition using the MNIST dataset. The objective was to enhance an existing model’s performance by implementing various optimization techniques. The goal was to increase accuracy from an initial baseline of 95% to nearly 99%.\n\n\n\n\nModel Optimization:\n\nUsed a pre-trained model as a baseline for comparison.\nAdjusted the MaxPooling2D layer’s strides parameter to (1,1) to reduce downsampling and capture more features.\nModified the Dropout rate to 0.05, ensuring more neurons remained active during training while preventing overfitting.\n\nTechniques Implemented:\n\nExperimented with different batch sizes and number of epochs to optimize training.\nEvaluated the effect of GPU vs. CPU performance on model training speed.\n\n\n\n\n\n\nSuccessfully improved the model’s accuracy from 95% to nearly 99%.\nApplied fine-tuned hyperparameters to create an optimized model with enhanced digit recognition capabilities.\nBalanced model complexity and generalization through strategic dropout settings and pooling adjustments."
+  },
+  {
+    "objectID": "projects/project_2.html#summary",
+    "href": "projects/project_2.html#summary",
+    "title": "MNIST Handwritten Digit Recognition",
+    "section": "",
+    "text": "This project focused on improving the accuracy of handwritten digit recognition using the MNIST dataset. The objective was to enhance an existing model’s performance by implementing various optimization techniques. The goal was to increase accuracy from an initial baseline of 95% to nearly 99%.\n\n\n\n\nModel Optimization:\n\nUsed a pre-trained model as a baseline for comparison.\nAdjusted the MaxPooling2D layer’s strides parameter to (1,1) to reduce downsampling and capture more features.\nModified the Dropout rate to 0.05, ensuring more neurons remained active during training while preventing overfitting.\n\nTechniques Implemented:\n\nExperimented with different batch sizes and number of epochs to optimize training.\nEvaluated the effect of GPU vs. CPU performance on model training speed.\n\n\n\n\n\n\nSuccessfully improved the model’s accuracy from 95% to nearly 99%.\nApplied fine-tuned hyperparameters to create an optimized model with enhanced digit recognition capabilities.\nBalanced model complexity and generalization through strategic dropout settings and pooling adjustments."
   }
 ]
