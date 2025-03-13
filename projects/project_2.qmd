@@ -29,3 +29,6 @@ This project focused on improving the accuracy of handwritten digit recognition 
 - Successfully improved the model’s accuracy from 95% to nearly 99%.
 - Applied fine-tuned hyperparameters to create an optimized model with enhanced digit recognition capabilities.
 - Balanced model complexity and generalization through strategic dropout settings and pooling adjustments.
+
+### Document
+[MNIST Handwritten Digit Recognition](/projects/mnist.pdf)

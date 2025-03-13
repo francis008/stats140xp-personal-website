@@ -33,3 +33,7 @@ This project aimed to classify banknotes as genuine or counterfeit using machine
 - The Gradient Boosting model achieved a near-perfect accuracy of 99.27%, suggesting strong predictive capabilities.
 - Both Random Forest and Gradient Boosting significantly outperformed the Decision Tree in terms of generalization and error minimization.
 - This analysis demonstrated the effectiveness of ensemble methods like Random Forest and Gradient Boosting in reducing classification errors for banknote authentication.
+
+### Document
+[Banknote Authentication](/projects/banknote_auth.pdf)
+
