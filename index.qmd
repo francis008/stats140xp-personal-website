@@ -34,4 +34,26 @@ A.S in Mathematics | Sept 2021 - June 2023
 UCLA Housing | Front Desk Assistant \
 June 2024 - present
 
-
+## Skill set
+- Python
+  - NumPy
+  - Pandas
+  - Matplotlib
+  - Scikit-learn
+  - TensorFlow
+- R
+  - ggplot2
+  - Dplyr
+  - Caret
+- SQL
+- Tableau
+- MS Excel
+  - VLookup
+  - Pivot Table
+- Stata
+- Git
+  - Github
+- Java
+- HTML5
+- CSS
+- C++
