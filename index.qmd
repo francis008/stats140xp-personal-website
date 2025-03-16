@@ -34,7 +34,7 @@ A.S in Mathematics | Sept 2021 - June 2023
 UCLA Housing | Front Desk Assistant \
 June 2024 - present
 
-## Skill set
+## Skill sets
 - Python
   - NumPy
   - Pandas
