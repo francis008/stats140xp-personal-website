@@ -7,33 +7,35 @@ image: "counterfeit.jpg"
 categories: ["Python", "Classification"]
 ---
 
-## Summary 
+## Summary
 
 ### Introduction
+
 This project aimed to classify banknotes as genuine or counterfeit using machine learning models. The objective was to develop and compare different classifiers to determine the most accurate model for this task. The process involved data preprocessing, model training, evaluation, and performance analysis.
 
 ### Process
 
-* **Data** **Preparation:**
-  - Loaded the dataset and structured it into feature variables (X) and labels (y).
-  - Standardized feature variables for improved model performance.
-  - Split the dataset into training and testing sets using a 70-30 ratio.
+-   **Data** **Preparation:**
 
-* **Modeling** **and** **Evaluation:**
+    -   Loaded the dataset and structured it into feature variables (X) and labels (y).
+    -   Standardized feature variables for improved model performance.
+    -   Split the dataset into training and testing sets using a 70-30 ratio.
 
-  - Trained a Decision Tree classifier and evaluated its accuracy on both training and test sets.
-  - Implemented a Random Forest model with 51 estimators and a depth of 5, achieving higher accuracy compared to the Decision Tree.
-  - Applied a Gradient Boosting classifier with the same number of estimators and depth, which showed the highest training accuracy.
-  - Assessed model performance using accuracy scores and test error rates.
+-   **Modeling** **and** **Evaluation:**
+
+    -   Trained a Decision Tree classifier and evaluated its accuracy on both training and test sets.
+    -   Implemented a Random Forest model with 51 estimators and a depth of 5, achieving higher accuracy compared to the Decision Tree.
+    -   Applied a Gradient Boosting classifier with the same number of estimators and depth, which showed the highest training accuracy.
+    -   Assessed model performance using accuracy scores and test error rates.
 
 ### Outcome
 
-- The Decision Tree model had a test accuracy of 96.36%, indicating moderate performance.
-- The Random Forest model improved accuracy to 99.51%, showing better generalization.
-- The Gradient Boosting model achieved a near-perfect accuracy of 99.27%, suggesting strong predictive capabilities.
-- Both Random Forest and Gradient Boosting significantly outperformed the Decision Tree in terms of generalization and error minimization.
-- This analysis demonstrated the effectiveness of ensemble methods like Random Forest and Gradient Boosting in reducing classification errors for banknote authentication.
+-   The Decision Tree model had a test accuracy of 96.36%, indicating moderate performance.
+-   The Random Forest model improved accuracy to 99.51%, showing better generalization.
+-   The Gradient Boosting model achieved a near-perfect accuracy of 99.27%, suggesting strong predictive capabilities.
+-   Both Random Forest and Gradient Boosting significantly outperformed the Decision Tree in terms of generalization and error minimization.
+-   This analysis demonstrated the effectiveness of ensemble methods like Random Forest and Gradient Boosting in reducing classification errors for banknote authentication.
 
 ### Document
-[Banknote Authentication](/projects/banknote_auth.pdf)
 
+[Banknote Authentication](/projects/banknote_auth.pdf)
