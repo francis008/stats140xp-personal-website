@@ -45,14 +45,14 @@ June 2024 - present
   - ggplot2
   - Dplyr
   - Caret
-- SQL
-- Tableau
 - MS Excel
   - VLookup
   - Pivot Table
-- Stata
 - Git
   - Github
+- SQL
+- Tableau
+- Stata
 - Java
 - HTML5
 - CSS
