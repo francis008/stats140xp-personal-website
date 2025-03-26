@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Francis Chan">
+<meta name="dcterms.date" content="2025-03-20">
+<meta name="description" content="This project involves identifying key factors influencing diabetes.">
 
-<title>Project – Francis Chan</title>
+<title>Diabetes Risk Prediction with Statistical Modeling – Francis Chan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Francis Chan</span>
     </a>
   </div>
@@ -149,11 +92,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -168,21 +111,56 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="QW5hbHlzaXM=">Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2xhc3NpZmljYXRpb24=">Classification <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHJlZGljdGlvbg==">Prediction <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
+  <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome">Outcome</a></li>
+  <li><a href="#limitations-and-future-improvements" id="toc-limitations-and-future-improvements" class="nav-link" data-scroll-target="#limitations-and-future-improvements">Limitations and Future Improvements</a></li>
+  <li><a href="#document" id="toc-document" class="nav-link" data-scroll-target="#document">Document</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project</h1>
-</div>
+<h1 class="title">Diabetes Risk Prediction with Statistical Modeling</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Prediction</div>
+    <div class="quarto-category">Analysis</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    This project involves identifying key factors influencing diabetes.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Francis Chan </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 20, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -192,186 +170,86 @@ window.Quarto = {
 </header>
 
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>This project aimed to identify key factors influencing diabetes diagnosis by analyzing a dataset of 9,538 medical records. The study focused on understanding the relationships between body mass index (BMI), glycated hemoglobin (HbA1c), family history, and age in predicting diabetes risk. Through statistical modeling and feature selection, the goal was to develop an effective predictive model for diabetes classification.</p>
+</section>
+<section id="process" class="level3">
+<h3 class="anchored" data-anchor-id="process">Process</h3>
+<ul>
+<li><p><strong>Data</strong> <strong>Preprocessing:</strong></p>
+<ul>
+<li>Utilized a secondary dataset containing demographic, lifestyle, and biometric health data.</li>
+<li>The dataset required minimal cleaning, with no missing values or outliers to remove.</li>
+<li>Checked for multicollinearity using Variance Inflation Factor (VIF), revealing strong correlation between HbA1c and glucose, leading to the removal of glucose from the model.</li>
+</ul></li>
+<li><p><strong>Feature</strong> <strong>Selection:</strong></p>
+<ul>
+<li>Employed stepwise regression to identify the most significant predictors.</li>
+<li>Final selected variables: Age, BMI, HbA1c, and Family History.</li>
+<li>Used ANOVA to confirm that the reduced model performed comparably to the full model, ensuring efficiency without sacrificing predictive power.</li>
+</ul></li>
+<li><p><strong>Modeling</strong> <strong>and</strong> <strong>Evaluation:</strong></p>
+<ul>
+<li>Implemented logistic regression as the primary predictive model.</li>
+<li>Performed train-test split (70%-30%) and evaluated the model using a confusion matrix, achieving a 97% accuracy.</li>
+<li>Conducted 5-fold cross-validation, with performance metrics:
+<ul>
+<li>Root Mean Squared Error (RMSE): 0.146</li>
+<li>R-squared: 0.906 (indicating the model explains 90.6% of variance in diabetes outcomes)</li>
+<li>Mean Absolute Error (MAE): 0.04</li>
+</ul></li>
+<li>Plotted the Receiver Operating Characteristic (ROC) curve, yielding an AUC of 0.99, reflecting high classification performance.</li>
+</ul></li>
+<li><p><strong>Further</strong> <strong>Exploration:</strong></p>
+<ul>
+<li>Family History &amp; Diabetes Risk:
+<ul>
+<li>While family history was statistically insignificant in the model, visualizations revealed that individuals with a family history of diabetes had a higher proportion of diagnoses, suggesting an underlying influence.</li>
+</ul></li>
+<li>Age &amp; Family History Interaction:
+<ul>
+<li>Analyzed diabetes cases across different age groups and found that family history remained a strong risk factor across all ages, whereas diabetes risk for individuals without family history increased significantly after age 50-60.</li>
+</ul></li>
+<li>BMI &amp; HbA1C Interaction:
+<ul>
+<li>Found that higher BMI and HbA1c levels corresponded to a greater likelihood of diabetes diagnosis, reinforcing their predictive importance.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="outcome" class="level3">
+<h3 class="anchored" data-anchor-id="outcome">Outcome</h3>
+<ul>
+<li>Developed a highly accurate logistic regression model for diabetes prediction.</li>
+<li>Identified BMI, HbA1c, and Age as primary predictors, with family history as a potential modifier.</li>
+<li>Demonstrated that early monitoring of metabolic health (HbA1c, BMI) is critical in diabetes prevention.</li>
+</ul>
+</section>
+<section id="limitations-and-future-improvements" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-and-future-improvements">Limitations and Future Improvements</h3>
+<ul>
+<li>Confounders not included: The dataset lacked variables such as diet, exercise, and socioeconomic status, which could influence diabetes risk.</li>
+<li>Measurement errors: Variability in medical recordings and instruments could introduce inconsistencies.</li>
+<li>Future research directions:
+<ul>
+<li>Investigate gender-specific diabetes risks (e.g., male prevalence vs.&nbsp;female long-term complications).</li>
+<li>Explore BMI and gender interactions in diabetes risk.</li>
+<li>Incorporate player-specific statistics or historical trends to refine predictions.</li>
+</ul></li>
+</ul>
+</section>
+<section id="document" class="level3">
+<h3 class="anchored" data-anchor-id="document">Document</h3>
+<p><a href="../projects/diabetes.pdf">Diabetes Risk Prediction</a></p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UiUyQ1ByZWRpY3Rpb24lMkNBbmFseXNpcw==" data-listing-date-sort="1742454000000" data-listing-file-modified-sort="1742952334100" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="577">
-<div class="thumbnail">
-<p><a href="./projects/project_4.html" class="no-external"></a></p><a href="./projects/project_4.html" class="no-external">
-<p><img loading="lazy" src="./projects/diabetes.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/project_4.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/project_4.html" class="no-external">Diabetes Risk Prediction with Statistical Modeling</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/project_4.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlZGljdGlvbg=='); return false;">
-Prediction
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXM='); return false;">
-Analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/project_4.html" class="no-external">This project involves identifying key factors influencing diabetes.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/project_4.html" class="no-external">
-<div class="listing-date">
-Mar 20, 2025
-</div>
-<div class="listing-author">
-Francis Chan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHl0aG9uJTJDUHJlZGljdGlvbg==" data-listing-date-sort="1734076800000" data-listing-file-modified-sort="1741909606172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="521">
-<div class="thumbnail">
-<p><a href="./projects/project_3.html" class="no-external"></a></p><a href="./projects/project_3.html" class="no-external">
-<p><img loading="lazy" src="./projects/nba.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/project_3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/project_3.html" class="no-external">2023-2024 NBA Results Prediction</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/project_3.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlZGljdGlvbg=='); return false;">
-Prediction
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/project_3.html" class="no-external">This project involves preprocessing and predicting the NBA dataset.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/project_3.html" class="no-external">
-<div class="listing-date">
-Dec 13, 2024
-</div>
-<div class="listing-author">
-Francis Chan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UHl0aG9uJTJDQ2xhc3NpZmljYXRpb24=" data-listing-date-sort="1731225600000" data-listing-file-modified-sort="1741899911982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="283">
-<div class="thumbnail">
-<p><a href="./projects/project_1.html" class="no-external"></a></p><a href="./projects/project_1.html" class="no-external">
-<p><img loading="lazy" src="./projects/counterfeit.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/project_1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/project_1.html" class="no-external">Banknote Authentication and Model Evaluation</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/project_1.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2xhc3NpZmljYXRpb24='); return false;">
-Classification
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/project_1.html" class="no-external">This project involves classifying genuine or counterfeit banknotes.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/project_1.html" class="no-external">
-<div class="listing-date">
-Nov 10, 2024
-</div>
-<div class="listing-author">
-Francis Chan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UHl0aG9uJTJDQ2xhc3NpZmljYXRpb24=" data-listing-date-sort="1723878000000" data-listing-file-modified-sort="1741899924000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
-<div class="thumbnail">
-<p><a href="./projects/project_2.html" class="no-external"></a></p><a href="./projects/project_2.html" class="no-external">
-<p><img loading="lazy" src="./projects/MNIST.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/project_2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/project_2.html" class="no-external">MNIST Handwritten Digit Recognition</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/project_2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2xhc3NpZmljYXRpb24='); return false;">
-Classification
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/project_2.html" class="no-external">This project aims to improve the classification model.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/project_2.html" class="no-external">
-<div class="listing-date">
-Aug 17, 2024
-</div>
-<div class="listing-author">
-Francis Chan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

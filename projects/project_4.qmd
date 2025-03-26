@@ -1,0 +1,67 @@
+---
+title: "Diabetes Risk Prediction with Statistical Modeling"
+author: "Francis Chan"
+date: "March 20, 2025"
+description: "This project involves identifying key factors influencing diabetes."
+image: "diabetes.jpg"
+categories: ["R", "Prediction", "Analysis"]
+---
+
+## Summary
+git ad
+### Introduction
+
+This project aimed to identify key factors influencing diabetes diagnosis by analyzing a dataset of 9,538 medical records. The study focused on understanding the relationships between body mass index (BMI), glycated hemoglobin (HbA1c), family history, and age in predicting diabetes risk. Through statistical modeling and feature selection, the goal was to develop an effective predictive model for diabetes classification.
+
+### Process
+
+-   **Data** **Preprocessing:**
+
+    -   Utilized a secondary dataset containing demographic, lifestyle, and biometric health data.
+    -   The dataset required minimal cleaning, with no missing values or outliers to remove.
+    -   Checked for multicollinearity using Variance Inflation Factor (VIF), revealing strong correlation between HbA1c and glucose, leading to the removal of glucose from the model.
+
+
+-   **Feature** **Selection:**
+
+    -   Employed stepwise regression to identify the most significant predictors.
+    -   Final selected variables: Age, BMI, HbA1c, and Family History.
+    -   Used ANOVA to confirm that the reduced model performed comparably to the full model, ensuring efficiency without sacrificing predictive power.
+
+-   **Modeling** **and** **Evaluation:**
+
+    -   Implemented logistic regression as the primary predictive model.
+    -   Performed train-test split (70%-30%) and evaluated the model using a confusion matrix, achieving a 97% accuracy.
+    -   Conducted 5-fold cross-validation, with performance metrics:
+        - Root Mean Squared Error (RMSE): 0.146
+        - R-squared: 0.906 (indicating the model explains 90.6% of variance in diabetes outcomes)
+        - Mean Absolute Error (MAE): 0.04
+    -   Plotted the Receiver Operating Characteristic (ROC) curve, yielding an AUC of 0.99, reflecting high classification performance.
+    
+-   **Further** **Exploration:**
+  
+    - Family History & Diabetes Risk:
+      - While family history was statistically insignificant in the model, visualizations revealed that individuals with a family history of diabetes had a higher proportion of diagnoses, suggesting an underlying influence.
+    - Age & Family History Interaction:
+      - Analyzed diabetes cases across different age groups and found that family history remained a strong risk factor across all ages, whereas diabetes risk for individuals without family history increased significantly after age 50-60.
+    - BMI & HbA1C Interaction:
+      - Found that higher BMI and HbA1c levels corresponded to a greater likelihood of diabetes diagnosis, reinforcing their predictive importance.
+
+### Outcome
+
+-  Developed a highly accurate logistic regression model for diabetes prediction.
+-  Identified BMI, HbA1c, and Age as primary predictors, with family history as a potential modifier.
+-  Demonstrated that early monitoring of metabolic health (HbA1c, BMI) is critical in diabetes prevention.
+
+### Limitations and Future Improvements
+
+-   Confounders not included: The dataset lacked variables such as diet, exercise, and socioeconomic status, which could influence diabetes risk.
+-   Measurement errors: Variability in medical recordings and instruments could introduce inconsistencies.
+-   Future research directions:
+    - Investigate gender-specific diabetes risks (e.g., male prevalence vs. female long-term complications).
+    - Explore BMI and gender interactions in diabetes risk.
+    - Incorporate player-specific statistics or historical trends to refine predictions.
+
+### Document
+
+[Diabetes Risk Prediction](/projects/diabetes.pdf)
