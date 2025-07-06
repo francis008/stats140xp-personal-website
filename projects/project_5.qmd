@@ -1,0 +1,74 @@
+---
+title: "Predicting Tesla Stock Movement Using Elon Musk's Twitter Sentiment: A Multi-Model NLP Approach"
+author: "Francis Chan"
+date: "May 16, 2025"
+description: "This project involves predicting stocks based on sentiment analysis."
+image: "tesla-stock.jpg"
+categories: ["Python", "Prediction", "Analysis"]
+---
+
+## Summary
+
+### Introduction
+
+This project aimed to analyze the relationship between Elon Musk's Twitter sentiment and Tesla (TSLA) stock price movements by developing machine learning models that predict stock direction and volatility. The study focused on understanding how social media sentiment, engagement metrics, and tweet characteristics influence next-day stock performance. Through advanced natural language processing and ensemble modeling, the goal was to create an effective sentiment-driven trading signal system.
+
+## Process
+-   **Data** **Preprocessing:**
+
+    - Collected Elon Musk's Twitter data and aligned it with Tesla stock price data from Yahoo Finance.
+    - Handled missing values by dropping tweets without corresponding trading day data (weekends, holidays).
+    - Created proper date mappings between tweet dates and next trading day closing prices to account for market closures.
+    - Engineered target variables: binary classification for price direction (pct_change_next_day > 0) and volatility detection (abs(pct_change_next_day) > 0.02).
+
+-   **Feature** **Selection:**
+
+    -   Implemented multiple sentiment analysis approaches:
+          - VADER sentiment analysis for social media text
+          - FinBERT (financial domain-specific BERT) for financial sentiment scoring
+          - Twitter-RoBERTa for Twitter-optimized sentiment classification
+    -   Created hybrid sentiment features combining VADER and RoBERTa scores
+    -   Incorporated tweet engagement metrics: like count, retweet count, quote count, and view count
+    -   Mapped categorical sentiment labels to numerical values for model compatibility
+
+-   **Modeling** **and** **Evaluation:**
+
+    -   Implemented XGBoost classifier as the primary predictive model across multiple feature combinations
+    -   Performed train-test split (80%-20%) with consistent random state for reproducibility
+    -   Evaluated models using accuracy scores, classification reports, and confusion matrices
+    -   Tested various feature combinations:
+        -   VADER-only model with engagement metrics
+        -   FinBERT-only model with engagement metrics
+        -   RoBERTa-only model with engagement metrics
+        -   Hybrid sentiment model combining VADER and RoBERTa
+        -   Volatility prediction model using multiple sentiment sources
+   
+-   **Model** **Comparison:**
+
+    -   Systematic evaluation of different sentiment analysis approaches to identify optimal feature sets
+    -   Cross-validation framework through consistent train-test splitting methodology
+    -   Performance comparison between financial-domain (FinBERT) vs. social-media optimized (RoBERTa) sentiment models
+
+## Outcome
+
+- Successfully developed multiple XGBoost classification models for Tesla stock prediction based on Musk's Twitter activity
+- Identified optimal feature combinations incorporating both sentiment scores and social engagement metrics
+- Created a robust preprocessing pipeline handling the complexities of aligning social media timestamps with trading schedules
+- Established a framework for testing various state-of-the-art sentiment analysis models in financial prediction contexts
+
+## Limitations and Future Improvements
+-   **Technical** **constraints:** Running 32-bit Python on 64-bit OS limited memory capacity and model performance potential
+
+-   **Market** **complexity:** The models don't account for broader market conditions, earnings reports, or other fundamental factors affecting Tesla stock
+
+-   **Data** **limitations:** Limited to Musk's public tweets, missing private communications or other influential social media platforms
+
+-  **Future** **research** **directions:**
+
+    - Implement proper cross-validation with k-fold methodology for more robust model evaluation
+    - Add hyperparameter tuning using GridSearchCV or RandomizedSearchCV
+    - Incorporate feature scaling and normalization for improved model performance
+    - Explore ensemble methods combining multiple sentiment models
+    - Include technical indicators and market sentiment as additional features
+    - Investigate time-series modeling approaches to capture temporal dependencies in tweet-to-stock relationships
+    
